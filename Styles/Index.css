@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.Cabezera {
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 5px white;
+    border-color: #EDBB00;
+    width: 100%;
+}
+
+.Nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 1s;
+    text-shadow: black 1px 2px 2px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+    display: inline-block;
+    text-shadow: black 1px 2px 2px;
+    text-align: center;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+.description {
+    border: solid 3px;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bandera {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.foto img {
+    height: 800px;
+    width: 100%;
+    display: block;
+}
+
+p {
+    color: white;
+}
+
+.text {
+    position: absolute;
+    /* Se mueve libremente sobre el contenedor */
+    top: 50%;
+    /* Centrado vertical */
+    left: 50%;
+    /* Centrado horizontal */
+    transform: translate(-50%, -50%);
+    /* Ajuste exacto al centro */
+    color: white;
+    /* Color del texto */
+    font-size: 45px;
+    text-shadow: 2px 2px 4px black;
+    /* Sombra para que se lea mejor */
+}
+
+.conatiner_1 {
+    border: solid white;
+
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    width: 50%;
+    color: white;
+}
+
+.conatiner_2 {
+    border: solid white;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    width: 50%;
+    color: white;
+}
+
+.maps {
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+}
