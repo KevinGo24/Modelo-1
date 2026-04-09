@@ -5,6 +5,9 @@
 }
 
 body {
+    background-image: url(/Picture/ciudad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: black;
     background-repeat: no-repeat;
     width: 100%;
@@ -18,9 +21,10 @@ body {
     background-color: transparent;
     border-radius: 5px;
     box-shadow: 0px 0px 20px 5px white;
-    border-color: #EDBB00;
     width: 100%;
+    animation: infinite 5s cabezera alternate;
 }
+
 
 .Nav ul {
     display: flex;
@@ -53,13 +57,6 @@ a:hover {
     transform: scale(1.2);
 }
 
-.description {
-    border: solid 3px;
-    height: auto;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 .bandera {
     height: 50px;
@@ -72,35 +69,53 @@ a:hover {
     width: 20%;
 }
 
-.foto img {
-    height: 800px;
-    width: 100%;
-    display: block;
-}
 
 p {
     color: white;
 }
 
+
+.description {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.maps iframe {
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.foto {
+    height: 550px;
+    width: 100%;
+    background-image: url(/Picture/maria-mulata.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+
+}
+
 .text {
-    position: absolute;
-    /* Se mueve libremente sobre el contenedor */
-    top: 50%;
-    /* Centrado vertical */
-    left: 50%;
-    /* Centrado horizontal */
-    transform: translate(-50%, -50%);
-    /* Ajuste exacto al centro */
     color: white;
-    /* Color del texto */
     font-size: 45px;
-    text-shadow: 2px 2px 4px black;
-    /* Sombra para que se lea mejor */
+    text-shadow: 10px 2px 4px black;
+    text-align: center;
+    padding-top: 10%;
 }
 
 .conatiner_1 {
     border: solid white;
-
     text-align: center;
     height: auto;
     border-radius: 10px;
@@ -108,17 +123,123 @@ p {
     color: white;
 }
 
-.conatiner_2 {
+.conatiner_1 h2 {
+    color: white;
+    border: solid white;
+    background: linear-gradient(10deg, red, yellow, green, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.char {
+    height: 400px;
+    width: 70%;
+    padding: 10px;
+    background-size: contain;
+    border-radius: 10px;
+    animation: infinite alternate 5s char;
+}
+@keyframes char {
+    0%{
+        box-shadow: 1px 1px 1px 5px red;
+        border: solid 5px red;
+    }
+    25%{
+        box-shadow: 1px 1px 1px 5px yellow;
+        border: solid 5px yellow;
+    }
+    25%{
+        box-shadow: 1px 1px 1px 5px green;
+        border: solid 5px green;
+    }
+    50%{
+        box-shadow: 1px 1px 1px 5px white;
+        border: solid 5px white;
+    }
+}
+.conatiner_1 p {
+    font-size: 20px;
+    text-align: justify;
+    text-shadow: 2px 2px 4px black;
+}
+
+.container_2 {
     border: solid white;
     text-align: center;
     height: auto;
     border-radius: 10px;
-    width: 50%;
+    width: 100%;
+    /* Cambiado de 25% a 50% */
     color: white;
+    box-sizing: border-box;
 }
 
-.maps {
-    display: flex;
-    align-content: center;
+.container_2 h2 {
+    color: white;
+    border: solid white;
+    background: linear-gradient(10deg, red, yellow, green, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.container_3 {
+    border: solid white;
+    text-align: center;
+    /* Añadido para centrar contenido */
+    height: auto;
     border-radius: 10px;
+    width: 100%;
+    /* Cambiado de 25% a 50% */
+    color: white;
+    box-sizing: border-box;
+}
+
+.container_3 h2 {
+    color: white;
+    border: solid white;
+    background: linear-gradient(10deg, red, yellow, green, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.img_1 {
+    height: 500px;
+    width: 100%;
+    background-size: contain;
+    border: solid white 3px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.img_1:hover {
+    transform: scale(0.9);
+}
+
+.img_2,
+.img_3 {
+    width: 49%;
+    height: 600px;
+    object-fit: cover;
+    border: solid white 3px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: contain;
+    transition: 1s;
+}
+
+.img_2:hover {
+    transform: scale(0.9);
+}
+
+.img_3:hover {
+    transform: scale(0.9);
 }
