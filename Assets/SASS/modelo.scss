@@ -1,0 +1,60 @@
+body {
+    background-image: url(/Assets/Picture/malecon.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 20px;
+    
+    .Cabezera {
+        align-items: center;
+        height: 100px;
+    }
+
+    .navegation {
+        border: solid white;
+    }
+
+    .navegation ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        height: 50px;
+    }
+
+    li {
+        display: flex;
+        list-style: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 1s;
+        text-align: center;
+        width: 25%;
+        justify-content: center;
+
+    }
+
+    li:hover {
+        text-shadow: 5px 1px red;
+    }
+
+    .Description_photo {
+        border: solid white;
+        background-image: url(/Assets/Picture/maria-mulata.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        h1 {
+            padding: 100px;
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+        }
+    }
+
+}
