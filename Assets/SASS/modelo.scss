@@ -1,11 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url(/Assets/Picture/malecon.jpeg);
+    background: linear-gradient(100deg, red, yellow, green);
+    margin: 20px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    margin: 20px;
-    
+
     .Cabezera {
+        text-align: center;
         align-items: center;
         height: 100px;
     }
@@ -14,46 +20,148 @@ body {
         border: solid white;
     }
 
+    .bandera {
+        height: 50px;
+        width: 50%;
+    }
+
+    .Conatainer-master {
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        border: solid 3px white;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        margin: 10px
+    }
+
+    .Description-bandera {
+        border: solid 1px white;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2 {
+            border: solid white 2px;
+            background: linear-gradient(50deg, red, yellow, green);
+            letter-spacing: 5px;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+            padding: 15px;
+        }
+
+        .bandera-1 {
+            border: solid 2px white;
+            height: 150px;
+            width: 100%;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+            text-align: left;
+        }
+    }
+
+    .Description-alcalde {
+        border: solid 3px red;
+
+        h2 {
+            border: solid white 2px;
+            background: linear-gradient(50deg, red, yellow, green);
+            letter-spacing: 5px;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+            text-align: left;
+        }
+        .alcalde{
+            border: solid 2px white;
+            height: 550px;
+            width: 100%;
+        }
+    }
+
+    .collage-photo {
+        border: solid 3px tomato;
+    }
+
+    .bandera:hover {
+        box-shadow: white 10px 10px 10px 0px;
+    }
+
     .navegation ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style: none;
-        height: 50px;
+        height: 70px;
     }
 
     li {
         display: flex;
         list-style: none;
         color: white;
+        text-shadow: 2px 2px 3px black;
         font-size: 20px;
         cursor: pointer;
         transition: 1s;
         text-align: center;
-        width: 25%;
+        width: 20%;
         justify-content: center;
-
-    }
-
-    li:hover {
-        text-shadow: 5px 1px red;
+        letter-spacing: 5px;
     }
 
     .Description_photo {
+
         border: solid white;
         background-image: url(/Assets/Picture/maria-mulata.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 600px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-attachment: fixed;
+
         h1 {
-            padding: 100px;
+            padding: 20px;
             color: white;
             text-align: center;
+            letter-spacing: 5px;
+            border: solid 2px white;
+            align-items: center;
+        }
+
+        h2 {
+            padding: 20px;
+            color: white;
+            text-align: center;
+            letter-spacing: 2px;
+            align-items: center;
+        }
+
+        h3 {
+            padding: 20px;
+            color: white;
+            text-align: center;
+            letter-spacing: 5px;
+            border: solid 2px white;
+            align-items: center;
         }
 
         p {
             color: white;
-            text-align: center;
+            text-align: left;
+            font-size: 26px;
         }
     }
 
