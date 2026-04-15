@@ -59,15 +59,14 @@ body {
         }
 
         p {
-            color: white;
+            color: black;
             font-size: 20px;
             text-align: left;
         }
     }
 
     .Description-alcalde {
-        border: solid 3px red;
-
+        border: solid 3px white;
         h2 {
             border: solid white 2px;
             background: linear-gradient(50deg, red, yellow, green);
@@ -79,7 +78,7 @@ body {
         }
 
         p {
-            color: white;
+            color: black;
             font-size: 20px;
             text-align: left;
         }
@@ -90,10 +89,7 @@ body {
         }
     }
 
-    .collage-photo {
-        border: solid 3px tomato;
-    }
-
+    
     .bandera:hover {
         box-shadow: white 10px 10px 10px 0px;
     }
@@ -109,8 +105,8 @@ body {
     li {
         display: flex;
         list-style: none;
-        color: white;
-        text-shadow: 2px 2px 3px black;
+        color: black;
+        text-shadow: 2px 2px 3px white;
         font-size: 20px;
         cursor: pointer;
         transition: 1s;
@@ -120,13 +116,15 @@ body {
         letter-spacing: 5px;
     }
 
-    .Description_photo {
+    li:hover{
+        transform: scale(1.1);
+    }
 
-        border: solid white;
+    .Description_photo {
+        border: solid white 2px;
         background-image: url(/Assets/Picture/maria-mulata.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -134,24 +132,26 @@ body {
 
         h1 {
             padding: 20px;
-            color: white;
+            color: black;
             text-align: center;
             letter-spacing: 5px;
             border: solid 2px white;
             align-items: center;
+            text-shadow: 2px 2px 3px white;
         }
 
         h2 {
             padding: 20px;
-            color: white;
+            color: black;
             text-align: center;
             letter-spacing: 2px;
             align-items: center;
+            text-shadow: 2px 2px 3px white;
         }
 
         h3 {
             padding: 20px;
-            color: white;
+            color: black;
             text-align: center;
             letter-spacing: 5px;
             border: solid 2px white;
@@ -159,10 +159,46 @@ body {
         }
 
         p {
-            color: white;
+            color: black;
             text-align: left;
             font-size: 26px;
+            text-shadow: 2px 2px 3px white;
         }
     }
-
+    .collage-photo {
+        border: solid 2px white;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        h2{
+            padding: 20px;
+            color: black;
+            text-align: center;
+            letter-spacing: 2px;
+            align-items: center;
+            text-shadow: 2px 2px 3px white;
+        }
+        .fotos{
+            border: solid 2px white;
+            height: 400px;
+            width: 100%;
+            border-radius: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 1s;
+        }
+        .fotos:hover{
+            transform: scale(0.9);
+        }
+    }
+    .pie-pagina{
+        background-image: url(/Assets/Picture/1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        display: grid;
+        grid-column: 1/-1;
+        height: 100%;
+        width: 100%;
+    }
 }
