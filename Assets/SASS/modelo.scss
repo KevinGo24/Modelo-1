@@ -11,9 +11,14 @@ body {
     background-size: cover;
 
     .Cabezera {
-        text-align: center;
-        align-items: center;
-        height: 100px;
+        background-image: url(/Assets/Picture/1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        display: grid;
+        grid-column: 1/-1;
+        height: 100%;
+        width: 100%;
     }
 
     .navegation {
@@ -54,8 +59,9 @@ body {
 
         .bandera-1 {
             border: solid 2px white;
-            height: 150px;
+            height: 400px;
             width: 100%;
+            border-radius: 100px;
         }
 
         p {
@@ -86,6 +92,7 @@ body {
             border: solid 2px white;
             height: 550px;
             width: 100%;
+            border-radius: 100px;
         }
     }
 
@@ -118,6 +125,7 @@ body {
 
     li:hover{
         transform: scale(1.1);
+        text-shadow: 1px 1px 1px black;
     }
 
     .Description_photo {
@@ -171,18 +179,28 @@ body {
         flex-direction: column;
         gap: 50px;
         h2{
-            padding: 20px;
-            color: black;
+            border: solid white 2px;
+            background: linear-gradient(50deg, red, yellow, green);
+            letter-spacing: 5px;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+            padding: 15px;
             text-align: center;
-            letter-spacing: 2px;
-            align-items: center;
-            text-shadow: 2px 2px 3px white;
+        }
+        h3{
+            border: solid white 2px;
+            background: linear-gradient(50deg, red, yellow, green);
+            letter-spacing: 5px;
+            color: white;
+            text-shadow: 2px 2px 3px black;
+            padding: 15px;
+            text-align: center;
         }
         .fotos{
             border: solid 2px white;
             height: 400px;
             width: 100%;
-            border-radius: 100%;
+            border-radius: 100px;
             background-repeat: no-repeat;
             background-size: cover;
             transition: 1s;
